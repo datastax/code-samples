@@ -1,12 +1,17 @@
-Code-Samples
-============
+# Code Samples
 
-Code samples from DataStax
+Code samples from DataStax - Coming Soon!
 
-Coming Soon!
+## Support
 
-<p>
-You can use any code from this repository in verbatim or modified form as all examples in this repository are covered by the <a href="https://github.com/datastax/code-samples/blob/master/LICENSE">Apache License v2.0</a>.
-<p>
-But the code, examples, and snippets are not "Supported Software" under any DataStax subscriptions or other agreements. 
-</p>
+The code, examples, and snippets provided in this repository are not "Supported Software" under any DataStax subscriptions or other agreements.
+
+## License
+
+Copyright 2013-2015, DataStax
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
