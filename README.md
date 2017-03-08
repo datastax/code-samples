@@ -8,7 +8,7 @@ The code, examples, and snippets provided in this repository are not "Supported 
 
 ## License
 
-Copyright 2013-2016, DataStax
+Copyright 2013-2017, DataStax
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
