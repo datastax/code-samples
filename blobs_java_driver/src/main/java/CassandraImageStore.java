@@ -22,6 +22,10 @@ import java.util.List;
  * limitations under the License.
  */
 public class CassandraImageStore {
+    /* The code below is intended as a usage example for the blob datatype,
+     * not as data modeling advice. Cassandra is not designed to be a file
+     * store and is unlikely to work well as such.
+     */
 
     private final Session session;
     private final Cluster cluster;
