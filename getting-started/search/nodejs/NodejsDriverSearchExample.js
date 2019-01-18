@@ -4,7 +4,7 @@ const dse = require('dse-driver');
 
 async function run() {
     
-    const client = new dse.Client({ contactPoints: ["10.200.176.121"], localDataCenter: "SearchGraphAnalytics" });
+    const client = new dse.Client({ contactPoints: ["127.0.0.1"], localDataCenter: "datacenter1" });
     
     const keyspace = "world_ks";
     const table = "world_search_tbl";

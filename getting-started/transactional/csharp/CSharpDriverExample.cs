@@ -8,7 +8,7 @@ namespace csharp
         static void Main(string[] args)
         {
             IDseCluster cluster = DseCluster.Builder()
-                                .AddContactPoint("10.200.176.121")
+                                .AddContactPoint("127.0.0.1")
                                 .Build();
             IDseSession session = cluster.Connect();
 

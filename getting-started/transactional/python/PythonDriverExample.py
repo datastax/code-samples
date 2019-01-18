@@ -26,3 +26,5 @@ result_set = session.execute(read_stmt)
 
 for row in result_set:
     print "The capital of European country " + row.country + " is " + row.capital
+
+cluster.shutdown()

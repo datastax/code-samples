@@ -61,7 +61,7 @@ public class JavaDriverGraphExample {
     public static void main(String[] args){
         String graphName = "world_graph";
 
-        DseCluster cluster = DseCluster.builder().addContactPoints("10.200.176.121").build();
+        DseCluster cluster = DseCluster.builder().addContactPoints("127.0.0.1").build();
         DseSession session = cluster.connect();
         GraphTraversalSource g = DseGraph.traversal();
         session.getCluster().getConfiguration().getGraphOptions().setGraphName(graphName);

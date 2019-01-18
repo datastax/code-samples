@@ -61,7 +61,7 @@ namespace csharp
         {
             string graphName = "world_graph";
             IDseCluster cluster = DseCluster.Builder()
-                                .AddContactPoint("10.200.176.121")
+                                .AddContactPoint("127.0.0.1")
                                 .WithGraphOptions(new GraphOptions().SetName(graphName))
                                 .Build();
             IDseSession session = cluster.Connect();

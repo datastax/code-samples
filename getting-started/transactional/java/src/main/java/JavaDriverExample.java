@@ -22,7 +22,6 @@ public class JavaDriverExample {
 
         PreparedStatement insertStmt = session.prepare(String.format("INSERT INTO %s.%s (continent, country, capital) VALUES (?,?,?)", keyspace, table));
 
-        // Write 5 rows
         session.execute(insertStmt.bind("Europe", "United Kingdom", "London"));
         session.execute(insertStmt.bind("Europe", "Germany", "Berlin"));
         session.execute(insertStmt.bind("Europe", "Spain", "Madrid"));
@@ -31,7 +30,6 @@ public class JavaDriverExample {
 
         SimpleStatement readStmt = new SimpleStatement(String.format("SELECT country, capital FROM %s.%s WHERE continent = 'Europe'", keyspace, table));
         
-        // Read the European countries and their capitals
         ResultSet rs = session.execute(readStmt);
 
         for (Row row : rs) {

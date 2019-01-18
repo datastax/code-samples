@@ -54,8 +54,8 @@ async function run() {
     
     const graphName = "world_graph";
     const client = new dse.Client({ 
-        contactPoints: ["10.200.176.121"], 
-        localDataCenter: "SearchGraphAnalytics", 
+        contactPoints: ["127.0.0.1"], 
+        localDataCenter: "datacenter1", 
         profiles: [ 
             new dse.ExecutionProfile('default', {graphOptions: { name: graphName, language: 'bytecode-json'}}),
             new dse.ExecutionProfile('schema', {graphOptions: { name: graphName, language: 'gremlin-groovy'}}) ]}

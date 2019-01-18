@@ -37,7 +37,7 @@ int main() {
   CassCluster* cluster = cass_cluster_new();
   CassSession* session = cass_session_new();
 
-  cass_cluster_set_contact_points(cluster, "10.200.176.121");
+  cass_cluster_set_contact_points(cluster, "127.0.0.1");
   connect_future = cass_session_connect(session, cluster);
 
   if (cass_future_error_code(connect_future) != CASS_OK) {

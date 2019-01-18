@@ -1,7 +1,7 @@
 from dse.cluster import Cluster
 from dse.util import Point
 
-cluster = Cluster(["10.200.176.121"])
+cluster = Cluster(["127.0.0.1"])
 session = cluster.connect()
 
 keyspace = "world_ks"
@@ -30,3 +30,5 @@ result_set = session.execute(read_stmt)
 
 for row in result_set:
     print "The capital of European country " + row.country + " is " + row.capital
+
+cluster.shutdown()

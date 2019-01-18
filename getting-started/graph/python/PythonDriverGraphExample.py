@@ -53,7 +53,7 @@ graph_name = "world_graph"
 ep_schema = GraphExecutionProfile(graph_options=GraphOptions(graph_name=graph_name))
 ep = DseGraph.create_execution_profile(graph_name)
 
-cluster = Cluster(["10.200.176.121"], execution_profiles={'schema': ep_schema, EXEC_PROFILE_GRAPH_DEFAULT: ep})
+cluster = Cluster(["127.0.0.1"], execution_profiles={'schema': ep_schema, EXEC_PROFILE_GRAPH_DEFAULT: ep})
 session = cluster.connect()
 g = DseGraph.traversal_source(session=session)
 
